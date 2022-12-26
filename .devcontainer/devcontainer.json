@@ -1,0 +1,22 @@
+{
+	"name": "Infra",
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:16",
+
+	"postCreateCommand": "yarn install",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"njpwerner.autodocstring",
+				"GitHub.copilot"
+			]
+		}
+	},
+	"remoteUser": "node",
+	"features": {
+		"ghcr.io/devcontainers/features/aws-cli:1": {},
+		"ghcr.io/devcontainers/features/docker-from-docker:1": {}
+	}
+}
